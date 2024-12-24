@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Quinn0823">
+    <meta name="keywords" content="Quinn-Web, Quinn Qiu, Quinn0823, Personal Website">
+    <meta name="description" content="Chongqing Public Transport 重庆公交">
+
+    <meta name="theme-color" content="#99ccff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#6699cc" media="(prefers-color-scheme: dark)">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"> -->
+
+    <meta property="og:site_name" content="Quinn-Web">
+    <meta property="og:title" content="Chongqing Public Transport">
+    <meta property="og:description" content="Chongqing Public Transport 重庆公交">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quinn0823.github.io/images/icons/icon-32.png">
+
+    <base href="/cpt/">
+    <!-- <base href="/"> -->
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/icons/icon-64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/images/icons/icon-128.png">
+
+    <link rel="stylesheet" type="text/css" href="/projects/css/page.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://quinn0823.github.io/projects/css/page.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    
+    <script src="/js/font_awesome.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://quinn0823.github.io/js/font_awesome.js" crossorigin="anonymous"></script> -->
+    
+    <title>Chongqing Public Transport</title>
+</head>
+<body>
+    <div id="header"></div>
+    <h3>Control Panel</h3>
+    <input id="numIpt" type="text" oninput="numIptOn()">
+    <button id="clearBtn" onclick="clearNumIpt()">
+        <div class="cross">
+            <div class="lr"></div>
+            <div class="rl"></div>
+        </div>
+    </button>
+    <hr>
+    <div class="screen-border-outside">
+        <div class="screen-border-inside">
+            <div class="screen-output" id="numOpt"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="update">Dec. 24, 2024</div>
+        <div id="year">2024</div>
+        <div id="people">Quinn Qiu</div>
+    </div>
+    <script src="/projects/js/page.js"></script>
+    <!-- <script src="https://quinn0823.github.io/projects/js/page.js"></script> -->
+    <script src="js/project.js"></script>
+    <!-- <script src="js/binary_to_hexadecimal.js"></script> -->
+</body>
