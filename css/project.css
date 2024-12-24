@@ -1,0 +1,109 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#numIpt {
+    margin-bottom: 10px;
+    width: calc(100% - 41px);
+    float: left;
+}
+
+#clearBtn {
+    float: left;
+    margin-top: 0;
+    margin-left: 5px;
+    padding: 0;
+    border-radius: 18px;
+    width: 36px;
+    height: 36px;
+}
+.cross{
+    width: 30px;
+    height: 30px;
+}
+.cross .lr,
+.cross .rl {
+    position: absolute;
+    margin-top: 5px;
+    height: 20px;
+    width: 3px;
+    border-radius: 1.5px;
+    background-color: #6699cc;
+    transform-origin: center;
+    margin-left: 13.5px;
+    transition: 0.5s;
+}
+.cross .lr{
+    transform: rotate(-45deg);
+}
+.cross .rl{
+    transform: rotate(45deg);
+}
+#clearBtn:hover .cross .lr,
+#clearBtn:hover .cross .rl {
+    background-color: #fff;
+    margin-top: 2.5px;
+    height: 25px;
+}
+#clearBtn:hover .cross .lr{
+    transform: rotate(-135deg);
+}
+#clearBtn:hover .cross .rl{
+    transform: rotate(135deg);
+}
+
+
+.screen-border-outside {
+    width: calc(100% - 6px - 3px);
+    padding: 1.5px;
+    border-radius: 9px;
+    background-color: #000;
+    border: #333 3px solid;
+    /* border: initial; */
+}
+.screen-border-inside {
+    width: 100%;
+    border-radius: 4.5px;
+    overflow: hidden;
+}
+.screen-output {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.screen-output .line {
+    margin-top: 3px;
+    height: 9px;
+    white-space: nowrap;
+    font-size: 0;
+}
+.screen-output .line div {
+    margin-left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    /* box-sizing: border-box; */
+    /* white-space: normal; */
+    /* word-wrap: break-word; */
+    /* word-break: break-all; */
+    /* overflow: hidden; */
+}
+.screen-output .line:nth-child(1) {
+    margin-top: 0;
+}
+.screen-output .line div:first-child {
+    margin-left: 0;
+}
+.line .red-off {
+    background-color: #ff000020;
+}
+.line .red-on {
+    background-color: #ff0000;
+}
+.line .yellow-off {
+    background-color: #ffff0020;
+}
+.line .yellow-on {
+    background-color: #ffff00;
+}
